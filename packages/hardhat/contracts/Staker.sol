@@ -50,11 +50,11 @@ contract Staker is Ownable {
     _;
   }
 
-  constructor(address payable exampleExternalContractAddress, address yourAddress){
+  constructor(address payable exampleExternalContractAddress){
       exampleExternalContract = ExampleExternalContract(exampleExternalContractAddress);
       // Set owner of the contract to our own metamask address as Scaffold-ETH
       // default msg.sender is locally generated address
-      transferOwnership(yourAddress);
+      transferOwnership(/*ENTER_YOUR_ADDRESS*/);
   }
 
   /*

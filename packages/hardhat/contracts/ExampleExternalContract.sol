@@ -7,10 +7,10 @@ contract ExampleExternalContract is Ownable {
   bool public completed;
   address public admin;
   event AdminAdded(address);
-  constructor(address yourAddress) {
+  constructor() {
     // Set owner of the contract to our own metamask address as Scaffold-ETH
     // default msg.sender is locally generated address
-    transferOwnership(yourAddress);
+    transferOwnership(/*ENTER_YOUR_ADDRESS*/);
   }
 
   function complete(bool status) public returns (bool) {
